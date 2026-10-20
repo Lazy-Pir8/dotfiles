@@ -93,7 +93,7 @@ install_dependencies() {
                 xdg-desktop-portal-hyprland waybar rofi-wayland swww wallust \
                 quickshell kitty ghostty swaync wlogout cava fastfetch \
                 luajit kvantum qt5ct qt6ct grim slurp swappy wl-clipboard \
-                pavucontrol playerctl brightnessctl zsh || true
+                tesseract pavucontrol playerctl brightnessctl zsh || true
             ;;
         *)
             echo -e "${C_YELLOW}Auto-installation is not tailored for distro '${DISTRO}'.${C_RESET}"
@@ -227,3 +227,4 @@ echo -e "${C_BOLD}Next steps:${C_RESET}"
 echo -e "  1. If Hyprland is currently running, run: ${C_CYAN}hyprctl reload${C_RESET}"
 echo -e "  2. Or start Hyprland via your display manager or login terminal."
 echo -e "  3. To refresh palettes and wallpapers, press ${C_CYAN}SUPER + W${C_RESET} and select a wallpaper."
+

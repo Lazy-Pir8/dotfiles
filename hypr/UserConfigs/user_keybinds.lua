@@ -71,3 +71,22 @@ local unbind = user_keybinds_helper.unbind
 -- Converted from UserKeybinds.conf
 bind("SUPER SHIFT", "B", exec_cmd("~/.config/hypr/scripts/toggle_waybar.sh"), { description = "Toggle Waybar" })
 unbind("SUPER SHIFT", "I")
+
+-- ==================================================
+-- New Custom Features & Tools
+-- ==================================================
+
+-- 1. Screen Text OCR Tool (Captures region & copies text via Tesseract)
+bind("SUPER SHIFT", "T", exec_cmd("$HOME/.config/hypr/UserScripts/ScreenOCR.sh"), { description = "Screen Text OCR Snipping Tool" })
+
+-- 2. Power Profiles (144Hz Performance vs 60Hz Battery Saver)
+bind("SUPER CTRL", "P", exec_cmd("$HOME/.config/hypr/UserScripts/PowerProfileToggle.sh --toggle"), { description = "Toggle Power Profile (144Hz/60Hz)" })
+bind("SUPER ALT", "P", exec_cmd("$HOME/.config/hypr/UserScripts/PowerProfileToggle.sh --menu"), { description = "Power Profile Selection Menu" })
+
+-- 3. Screen Shaders (Digital Vibrance, Night Light, Grayscale)
+bind("SUPER ALT", "G", exec_cmd("$HOME/.config/hypr/UserScripts/ScreenShader.sh --menu"), { description = "Screen Shader Menu (Vibrance/Night Light)" })
+
+-- 4. Audio Output Switcher (Switch between Speakers, Bluetooth Headphones, etc.)
+bind("SUPER ALT", "A", exec_cmd("$HOME/.config/hypr/UserScripts/AudioOutputSelect.sh"), { description = "Audio Output Switcher" })
+
+

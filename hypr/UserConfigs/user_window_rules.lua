@@ -49,4 +49,4 @@ do
 end
 local apply_window_rule = user_window_rules_helper.apply_window_rule
 
--- No active window rules were found in WindowRules.conf.
+

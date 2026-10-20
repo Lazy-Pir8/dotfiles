@@ -123,3 +123,9 @@ sudo pacman -S --needed \
 | **`SUPER + SHIFT + K`** | Searchable Keybindings Cheat Sheet (`rofi`) |
 | **`SUPER + SHIFT + E`** | Quick Settings Menu |
 | **`CTRL + ALT + Delete`** | Power / Logout Menu (`wlogout`) |
+| **`SUPER + SHIFT + T`** | Screen Text OCR Snipping Tool (Copies selected text to clipboard) |
+| **`SUPER + CTRL + P`** | Quick Toggle Power Profile (144Hz Turbo vs 60Hz Battery Saver) |
+| **`SUPER + ALT + P`** | Power Profile Selection Menu (`rofi`) |
+| **`SUPER + ALT + G`** | Screen Shader Menu (Vibrance, Night Light, Grayscale, Invert) |
+| **`SUPER + ALT + A`** | Audio Output Switcher (Bluetooth, Speakers, HDMI) |
+

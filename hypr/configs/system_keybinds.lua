@@ -1017,8 +1017,8 @@ bind("SUPER", "mouse_down", dispatch("workspace", "e+1"), { description = "next 
 bind("SUPER", "mouse_up", dispatch("workspace", "e-1"), { description = "previous workspace" })
 bind("SUPER", "period", dispatch("workspace", "e+1"), { description = "next workspace" })
 bind("SUPER", "comma", dispatch("workspace", "e-1"), { description = "previous workspace" })
-bind("SUPER", "mouse:272", dispatch("movewindow", ""), { description = "move window" })
-bind("SUPER", "mouse:273", dispatch("resizewindow", ""), { description = "resize window" })
+bind("SUPER", "mouse:272", (dsp and dsp.window and dsp.window.drag and dsp.window.drag()) or dispatch("movewindow", ""), { description = "move window", mouse = true })
+bind("SUPER", "mouse:273", (dsp and dsp.window and dsp.window.resize and dsp.window.resize()) or dispatch("resizewindow", ""), { description = "resize window", mouse = true })
 
 -- KB passthrough submap: SUPER SHIFT P enters a submap that lets the keyboard
 -- pass through to the focused window. The only key bound inside the submap is

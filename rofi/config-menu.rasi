@@ -1,0 +1,80 @@
+/* ---- 💫 Hyprland Quick Menu Rofi Config 💫 ---- */
+/* Clean, single-column dropdown menu with full text visibility */
+
+@import "~/.config/hypr/rofi/config.rasi"
+
+/* ---- Window ---- */
+window {
+  location: center;
+  anchor: center;
+  width: 680px;
+  height: inherit;
+  border-radius: 12px;
+}
+
+/* ---- Mainbox ---- */
+mainbox {
+  children: [ "inputbar", "message", "listview" ];
+  padding: 16px;
+  spacing: 12px;
+}
+
+/* Ensure prompt is shown nicely */
+inputbar {
+  children: [ "prompt", "entry" ];
+  padding: 8px 12px;
+  spacing: 10px;
+}
+
+prompt {
+  enabled: true;
+  padding: 4px 6px;
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  placeholder: "Filter or select...";
+}
+
+/* Override custombox to ensure listview is direct for themes that use custombox */
+custombox {
+  spacing: 0px;
+  background-color: inherit;
+  text-color: inherit;
+  orientation: vertical;
+  children: [ "listview" ];
+}
+
+/* ---- Listview ---- */
+listview {
+  columns: 1;
+  lines: 7;
+  fixed-height: false;
+  fixed-columns: true;
+  spacing: 6px;
+  scrollbar: false;
+  cycle: true;
+  dynamic: true;
+}
+
+/* ---- Elements ---- */
+element {
+  orientation: horizontal;
+  padding: 10px 14px;
+  spacing: 10px;
+  border-radius: 8px;
+}
+
+element-icon {
+  size: 0%;
+}
+
+element-text {
+  horizontal-align: 0.0;
+  vertical-align: 0.5;
+  text-color: inherit;
+  margin: 0px;
+  padding: 0px;
+  expand: true;
+}
