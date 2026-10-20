@@ -46,6 +46,7 @@ GDK_BACKEND=$BACKEND yad \
   " W" "Choose wallpaper" "(Wallpaper Menu)" \
   " Shift W" "Choose wallpaper effects" "(imagemagick + awww)" \
   "CTRL ALT W" "Random wallpaper" "(via awww)" \
+  " SHIFT B" "Toggle Waybar" "(waybar on / off)" \
   " CTRL ALT B" "Hide/UnHide Waybar" "waybar" \
   " CTRL B" "Choose waybar styles" "(waybar styles)" \
   " ALT B" "Choose waybar layout" "(waybar layout)" \
@@ -76,6 +77,11 @@ GDK_BACKEND=$BACKEND yad \
   " CTRL Shift R" "Rofi Themes Menu v2" "Choose Rofi Themes via Theme Selector (modified)" \
   " SHIFT G" "Gamemode! All animations OFF or ON" "toggle" \
   " ALT E" "Rofi Emoticons" "Emoticon" \
+  " SHIFT T" "Screen Text OCR Snipping Tool" "(grim + tesseract -> clipboard)" \
+  " CTRL P" "Toggle Power Profile" "(144Hz Turbo vs 60Hz Battery)" \
+  " ALT P" "Power Profile Selection Menu" "(Choose 144Hz / 60Hz via rofi)" \
+  " ALT G" "Screen Shader Menu" "(Vibrance, Night Light, Grayscale)" \
+  " ALT A" "Audio Output Switcher" "(Speakers, Bluetooth, HDMI)" \
   " H" "Launch this Quick Cheat Sheet" "" \
   "" "" "" \
   "More tips:" "https://github.com/LinuxBeginnings/Hyprland-Dots/wiki" ""
